@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Patil - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Background Image Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Raj Patil</h1>
+            <p id="changing-text">Cyber Security Expert | Developer</p>
+        </div>
+    </section>
+
+    <!-- Navbar with Hamburger Button -->
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- Sidebar with Social Icons -->
+    <nav class="sidebar">
+        <div class="profile">
+            <img src="images/profile.jpg" alt="Raj Patil">
+            <h2>Raj Patil</h2>
+            <p>Cyber Security Expert | Developer</p>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+
+        <div class="sections-name">
+            <ul>
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#resume" onclick="closeMenu()">Resume</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+
+        </div>
+     
+       
+    </nav>
+
+    <!-- Sections in White Background -->
+    <div class="content">
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <img src="images/profile.jpg" alt="Raj Patil" class="about-image">
+                <div class="about-text">
+                    <p>Cyber Security Expert with experience in Network Security, Firewall Configurations, and Cloud Computing.</p>
+                    <p><strong>DOB:</strong> 26 Jan 2001</p>
+                    <p><strong>Location:</strong> Navi Mumbai, India</p>
+                    <p><strong>Phone:</strong> <a href="tel:+918956145164">+91 8956145164</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:rajp61894@gmail.com">rajp61894@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <a href="resume.pdf" download class="resume-btn">Download Resume</a>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>🔹 State Bank Firewall Management</h3>
+                <p>Managed and secured firewall policies for a large-scale enterprise network. Implemented security protocols and ensured smooth network traffic.</p>
+            </div>
+
+            <div class="project">
+                <h3>🔹 HDFC Bank ATM Monitoring</h3>
+                <p>Monitored and maintained **72 ATMs** for seamless network operations. Ensured 24/7 uptime and resolved network downtime issues.</p>
+            </div>
+
+            <div class="project">
+                <h3>🔹 SD-WAN Deployment</h3>
+                <p>Configured SD-WAN for **Punjab National Bank**. Optimized security and implemented encrypted traffic flow to prevent cyber threats.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p><strong>Phone:</strong> <a href="tel:+918956145164">+91 8956145164</a></p>
+            <p><strong>Email:</strong> <a href="mailto:rajp61894@gmail.com">rajp61894@gmail.com</a></p>
+            <p><strong>Location:</strong> Navi Mumbai, India</p>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

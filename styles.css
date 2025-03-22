@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    background: #f8f8f8;
+}
+
+/* Hero Section (Background Image + Name) */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('images/background.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    animation: fade 3s infinite alternate;
+}
+
+/* Navbar */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    color: white;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* White Background for Content */
+.content {
+    background: white;
+    padding: 50px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #111;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+/* Social Media Icons */
+.social-links {
+    text-align: center;
+    margin-top: 2px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 30px;
+}
+
+.sections-name a {
+    color: #f0f0f0; /* Set text color to white/light gray */
+    font-size: 20px; /* Increase font size */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+}
+
+.sections-name a:hover {
+    color: #ffcc00; /* Change color on hover (optional) */
+}
+.sections-name li {
+    margin-bottom: 20px; /* Adds space below each section name */
+    list-style: none; /* Removes default bullet points */
+}
+
+
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image & text */
+}
+
+.about-image {
+    width: 180px;  /* Small size */
+    height: 180px;
+    border: 50%;  
+}
+
+.about-text {
+    flex: 1; /* Text will take the remaining space */
+}
+
+
+/* Project Section */
+.project {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+section {
+    padding: 50px 0;
+}
+
+
+/* Animations */
+@keyframes fade {
+    0% { opacity: 0.6; }
+    100% { opacity: 1; }
+}  
